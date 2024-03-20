@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coffee Website</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .navbar-brand {
+      font-weight: bold;
+      color: #000;
+    }
+    .nav-link {
+      color: #000;
+    }
+    .nav-link.active {
+      color: blue !important;
+    }
+    .card {
+      margin-bottom: 20px;
+    }
+    .footer {
+      margin-top: 20px;
+    }
+    #contactFormLabel {
+      color: blue !important;
+    }
+    /* Custom styles for form */
+    .form-row {
+      margin-bottom: 15px;
+    }
+    /* Adjust form layout */
+    .form-group {
+      margin-bottom: 15px;
+    }
+    /* Hide pages by default */
+    .page {
+      display: none;
+    }
+    /* Show active page */
+    .page.active {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="coffee_logo.png" alt="Coffee Logo" style="width: 35px; margin-right: 0px;">
+        Coffee
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      \aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto"> <!-- Changed mr-auto to ml-auto to align menu to the right -->
+          <li class="nav-item">
+            <a class="nav-link active" href="#" id="homeLink">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="aboutLink">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="contactLink">Contact Me</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container mt-4">
+    <!-- Home Page Content -->
+    <div id="home" class="page active">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+              <img src="espresso.jpg" class="card-img-top" alt="Espresso">
+              <div class="card-body">
+                  <h5 class="card-title">Espresso</h5>
+                  <p class="citation" style="color: rgba(0, 0, 0, 0.5); font-size: smaller;">Alia Maelani | posted on 15 March 2024 </p>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit officia provident id! Deleniti ea nostrum unde omnis.</p>
+                  <a href="#" class="btn btn-primary">Read more</a>
+              </div>
+          </div>
+      </div>
+
+      <div class="col-md-4">
+          <div class="card">
+              <img src="cappuccino.jpg" class="card-img-top" alt="Cappuccino">
+              <div class="card-body">
+                  <h5 class="card-title">Cappuccino</h5>
+                  <p class="citation" style="color: rgba(0, 0, 0, 0.5); font-size: smaller;">Alia Maelani | posted on 15 March 2024</p>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit officia provident id! Deleniti ea nostrum unde omnis.</p>
+                  <a href="#" class="btn btn-primary">Read more</a>
+              </div>
+          </div>
+      </div>
+
+      <div class="col-md-4">
+          <div class="card">
+              <img src="latte.jpg" class="card-img-top" alt="Latte">
+              <div class="card-body">
+                  <h5 class="card-title">Latte</h5>
+                  <p class="citation" style="color: rgba(0, 0, 0, 0.5); font-size: smaller;">Alia Maelani | posted on 15 March 2024</p>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit officia provident id! Deleniti ea nostrum unde omnis.</p>
+                  <a href="#" class="btn btn-primary">Read more</a>
+              </div>
+          </div>
+      </div>
+      
+      <div class="col-md-4">
+          <div class="card">
+              <img src="macchiato.jpg" class="card-img-top" alt="Macchiato">
+              <div class="card-body">
+                  <h5 class="card-title">Macchiato</h5>
+                  <p class="citation" style="color: rgba(0, 0, 0, 0.5); font-size: smaller;">Alia Maelani | posted on 15 March 2024</p>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit officia provident id! Deleniti ea nostrum unde omnis.</p>
+                  <a href="#" class="btn btn-primary">Read more</a>
+              </div>
+          </div>
+      </div>
+
+      <div class="col-md-4">
+          <div class="card">
+              <img src="americano.jpg" class="card-img-top" alt="Americano">
+              <div class="card-body">
+                  <h5 class="card-title">Americano</h5>
+                  <p class="citation" style="color: rgba(0, 0, 0, 0.5); font-size: smaller;">Alia Maelani | posted on  15 March 2024</p>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit officia provident id! Deleniti ea nostrum unde omnis.</p>
+                  <a href="#" class="btn btn-primary">Read more</a>
+              </div>
+          </div>
+      </div>
+
+      <div class="col-md-4">
+          <div class="card">
+              <img src="frappe.jpg" class="card-img-top" alt="Mocha">
+              <div class="card-body">
+                  <h5 class="card-title">Frappe</h5>
+                  <p class="citation" style="color: rgba(0, 0, 0, 0.5); font-size: smaller;">Alia Maelani | posted on 15  March 2024</p>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit officia provident id! Deleniti ea nostrum unde omnis.</p>
+                  <a href="#" class="btn btn-primary">Read more</a>
+              </div>
+          </div>
+      </div>
+      </div>
+    </div>
+
+    <!-- About Page Content -->
+    <div id="about" class="page">
+      <div class="row">
+        <div class="col-md-12">
+          <h2><span id="contactFormLabel" style="color: blue;">About</span></h2>
+          <p>Kopi Kenangan adalah perusahaan yang bergerak di bidang kopi minuman yang turut meramaikan pasar kopi kekinian di Indonesia. 
+            Kopi Kenangan dianggap sukses mengisi ceruk kesenjangan harga antara kopi mahal bertaraf peritel internasional dan kopi instan 
+            kemasan yang disajikan di warung-warung kopi. Pamor merek Kopi Kenangan semakin kuat seiring dengan perkembangan bisnis Kopi Kenangan, 
+            khususnya semenjak mendapatkan suntikan dana dari beberapa modal ventura, seperti Sequoia India, Arrive, Serena Ventures dan Alpha JWC Ventures. 
+            Kopi Kenangan berencana memperluas pasar hingga ke luar negeri dengan memperkenalkan cita rasa khas kopi Indonesia.</p>
+        </div>
+      </div>
+    </div>
+
+   <!-- Contact Page Content -->
+<div id="contact" class="page">
+  <div class="row">
+    <div class="col-md-12">
+      <h2><span id="contactFormLabel" style="color: blue;">Contact Me</span></h2>
+      <p>If you need help, please contact us via the form below:</p>
+      <form>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+        </div>
+        <div class="form-row">
+          <div class="col">
+            <label for="firstName">First Name</label>
+            <input type="text" class="form-control" id="firstName" placeholder="Enter name">
+          </div>
+          <div class="col">
+            <label for="lastName">Last Name</label>
+            <input type="text" class="form-control" id="lastName" placeholder="Enter name">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea class="form-control" id="message" rows="3"></textarea>
+        </div>
+        <div class="form-group form-check">
+          <input type="checkbox" class="form-check-input" id="agree">
+          <label class="form-check-label" for="agree">I agree to the terms and conditions</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Send</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+  <footer class="footer mt-5 text-center">
+    <div class="container">
+      <span class="text-muted">© 2024 Coffee Website</span>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Custom Script -->
+  <script>
+    $(document).ready(function(){
+      $(".nav-link").click(function(){
+        $(".nav-link").removeClass("active");
+        $(this).addClass("active");
+        var page = $(this).attr('id').replace('Link', '');
+        $(".page").removeClass("active"); // Remove active class from all pages
+        $("#" + page).addClass("active"); // Add active class to the selected page
+      });
+    });
+  </script>
+</body>
+</html>
